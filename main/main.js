@@ -5,7 +5,7 @@ module.exports = function main() {
 			this.age=age;
 		}
 		introduce(){
-			return 'My name is ' +this.name+'.'+ 'I am'+this.age+" years old.";
+			return 'My name is ' +this.name+'.'+' I am '+this.age+' years old.';
 		}
 	}
 	class Student extends Person{
@@ -15,7 +15,7 @@ module.exports = function main() {
 			
 		}
 		introduce(){
-			return super.introduce()+"I am a student.I am at class "+klass+".";
+			return super.introduce()+' I am a Student. I am at Class '+klass+'.';
 		}
 		
 	}
