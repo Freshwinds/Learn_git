@@ -15,9 +15,12 @@ module.exports = function main() {
 			
 		}
 		introduce(){
-			return super.introduce()+' I am a Student. I am at Class '+klass+'.';
+			return super.introduce()+' I am a Student. I am at Class '+this.klass+'.';
 		}
 		
 	}
-		
+	var a = new a('Tom',21);
+	a.introduce();
+	var b= new ('Tom',21,2);
+	b.introduce();
 };
