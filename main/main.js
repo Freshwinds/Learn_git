@@ -1,6 +1,23 @@
-module.exports = function main(a) {
-    var sum=0;
-	for(var i=0;i<a.length;i++)
-		sum+=parseInt(a[i]);
-	return sum;
+module.exports = function main() {
+    class Person{
+		constructor(name,age){
+			this.name=name;
+			this.age=age;
+		}
+		introduce(){
+			return 'My name is ' +this.name+'.'+ 'I am'+this.age+" years old.";
+		}
+	}
+	class Student extends Person{
+		constructor(name,age,klass){
+			super(name,age);
+			this.klass=klass;
+			
+		}
+		introduce(){
+			return super.introduce()+"I am a student.I am at class "+klass+".";
+		}
+		
+	}
+		
 };
